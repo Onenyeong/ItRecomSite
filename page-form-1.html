@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="72x72"
+        href="https://firebasestorage.googleapis.com/v0/b/sparta-510ee.appspot.com/o/111settings_99949.png?alt=media&token=4857c084-22db-4a78-acf2-4049c5519543">
+  <title>정보 공유</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@500&display=swap');
+
+    * {
+      font-family: 'Gothic A1', sans-serif;
+    }
+
+    body {
+      background-color: gray;
+      padding-top: 70px
+    }
+
+    .main {
+      background-color: rgb(88, 88, 88);
+      text-align: center;
+      color: rgb(236, 236, 236);
+      text-shadow: 5px 5px 10px rgb(0, 0, 0);
+    }
+
+    .head {
+      background-color: rgb(44, 44, 44);
+      position: fixed;
+      top: 0;
+      z-index: 1000;
+      width: 100%;
+    }
+
+    .nav-link {
+      color: rgb(145, 143, 141);
+      margin-right: 10px;
+    }
+
+    .top-btn {
+      padding-right: 15px;
+    }
+
+    .card {
+      background-color: gray;
+      box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6), -10px -10px 20px rgba(255, 255, 255, 0.6);
+      border-radius: 30px;
+      overflow: hidden;
+    }
+    .card:hover {
+      background-color: rgb(61, 61, 61);
+      transform: scale(1.1);
+      transition: background-color 0.5s ease, transform 0.5s ease;
+    }
+
+    .card:not(:hover) {
+      transform: scale(1.0);
+      transition: background-color 0.5s ease, transform 0.5s ease;
+    }
+
+    .col-md-6 {
+      color: rgb(255, 255, 255);
+      text-shadow: 2px 2px 3px black;
+    }
+
+    .display-3 {
+      animation: blinkText 2s infinite alternate;
+    }
+    @keyframes blinkText {
+      0% {
+        color: white;
+      }
+      100% {
+        color: rgb(172, 121, 255);
+      }
+    }
+
+  </style>
+
+</head>
+
+<body>
+<div class="head">
+  <header class="p-3 text-bg-dark">
+    <div class="container" bis_skin_checked="1">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+           bis_skin_checked="1">
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a  href="#" onclick="showPageForm(1)" class="nav-link px-2">Home</a></li>
+          <li><a  href="#" onclick="showPageForm(2)"class="nav-link px-2 text-white">추천 강의</a></li>
+          <li><a  href="#" onclick="showPageForm(3)" class="nav-link px-2 text-white">개발 블로그</a></li>
+
+          <script>
+            function showPageForm(pageNumber) {
+              if (pageNumber === 1) {
+                window.location.href = 'page-form-1.html';
+              }
+              if (pageNumber === 2) {
+                window.location.href = 'page-form-2.html';
+              }
+              if (pageNumber === 3) {
+                window.location.href = 'page-form-3.html';
+              }
+            }
+          </script>
+
+        </ul>
+        <div class="text-end" bis_skin_checked="1">
+          <a class="btn btn-danger" href="https://spartacodingclub.kr/" target="_blank" role="button">스파르타
+            코딩클럽</a>
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
+</div>
+<div class="main">
+  <div class="p-2 mb-4 bg-body-tertiary rounded-3" bis_skin_checked="1">
+    <div class="container-fluid py-5" bis_skin_checked="1">
+      <h2 class="display-3 fw-bold">For Developer</h1>
+        <p>개발자를 위한 취업, 정보 공유 페이지</p>
+    </div>
+  </div>
+</div>
+<div class="card mb-3"
+     style="width: 1400px; height: 250px; margin: auto; margin-top: 60px; border: none">
+  <div class="row g-0">
+    <div class="col-md-4" style="width: 500px; height: 250px; background-size: cover;">
+      <a href="https://careerly.co.kr/" target="_blank"><img
+              src="https://firebasestorage.googleapis.com/v0/b/sparta-510ee.appspot.com/o/careerly.png?alt=media&token=186159d7-b51a-46fb-96d5-4da98b008d63"
+              class="img-fluid rounded-start" alt="..."></a>
+    </div>
+    <div class="col-md-6">
+      <div class="card-body">
+        <h5 class="card-title fw-bold">커리어리</h5>
+        <p class="card-text" style="margin-top: 45px">개발자들에게 도움이 되는 필수 기술 정보 & 트렌드를 제공합니다.<br>각 분야 TOP 개발자들의
+          실무
+          이야기도 들어볼 수 있고, 프로필을 만들면 찾아오는 다양한 커리어 기회도 있어요. 100,000명의 개발자가 커리어리로 앞서가고 있어요!</p>
+        <p class="card-text"><small class="text-body-secondary">요즘 개발자들의 필수 커뮤니티, 커리어리</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card mb-3"
+     style="max-width: 1400px; height: 250px; margin: auto; margin-top: 40px; border: none">
+  <div class="row g-0">
+    <div class="col-md-4" style="width: 500px; height: 250px; background-size: cover;">
+      <a href="https://www.jumpit.co.kr/" target="_blank"><img
+              src="https://firebasestorage.googleapis.com/v0/b/sparta-510ee.appspot.com/o/jumpit.png?alt=media&token=7b4228ff-c03f-4f9f-a6eb-cc43cb5fc909"
+              class="img-fluid rounded-start" alt="..."></a>
+    </div>
+    <div class="col-md-6">
+      <div class="card-body">
+        <h5 class="card-title fw-bold">점핏</h5>
+        <p class="card-text" style="margin-top: 45px">개발자 채용 부터 취업 Q&A까지 다양한 정보를 제공합니다.<br>개발자 인터뷰를 볼 수 있으며
+          기업을
+          테마별로 모아볼 수 있다는 장점이 있습니다.</p>
+        <p class="card-text"><small class="text-body-secondary">개발자 커리어 점프</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card mb-3"
+     style="max-width: 1400px; height: 250px; margin: auto; margin-top: 40px; border: none">
+  <div class="row g-0">
+    <div class="col-md-4" style="width: 500px; height: 250px; background-size: cover;">
+      <a href="https://intellipick.spartacodingclub.kr/" target="_blank"><img
+              src="https://firebasestorage.googleapis.com/v0/b/sparta-510ee.appspot.com/o/intellipick.png?alt=media&token=3e7e4f89-d636-4e33-9107-93e144129ea4"
+              class="img-fluid rounded-start" alt="..."></a>
+    </div>
+    <div class="col-md-6">
+      <div class="card-body">
+        <h5 class="card-title fw-bold">인텔리픽</h5>
+        <p class="card-text" style="margin-top: 45px">채용 공고, AI이력서 코칭등 다양한 최신 기능을 제공합니다.<br>면접 후기, 복지, 평점
+          등.. 흩어진 기업정보, 일일이 찾기 어려우셨죠?<br>
+          인텔리픽 ‘Job 보는 눈’을 통해 가고 싶은 회사에 대한 모든 정보를 한눈에 찾아보세요!</p>
+        <p class="card-text"><small class="text-body-secondary">IT인재 채용 전문 플랫폼</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card mb-3"
+     style="max-width: 1400px; height: 250px; margin: auto; margin-top: 40px; border: none">
+  <div class="row g-0">
+    <div class="col-md-4" style="width: 500px; height: 250px; background-size: cover;">
+      <a href="https://www.rocketpunch.com/" target="_blank"><img
+              src="https://firebasestorage.googleapis.com/v0/b/sparta-510ee.appspot.com/o/rocket.jpg?alt=media&token=d3e2e3b5-6108-475c-8e53-6efa28ab941a"
+              class="img-fluid rounded-start" alt="..."></a>
+    </div>
+    <div class="col-md-6">
+      <div class="card-body">
+        <h5 class="card-title fw-bold">로켓펀치</h5>
+        <p class="card-text" style="margin-top: 45px">채용 사이트에 가까운 사이트입니다.<br>오늘의 일을 일기처럼 기록하는 기능이 있으며, 이력서를
+          웹상에서 깔끔하게 작성할 수 있는 장점이 있습니다. 이력서만 등록해도 헤드헌팅 구인이 들어와요!</p>
+        <p class="card-text"><small class="text-body-secondary">비즈니스 네트워크</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card mb-3"
+     style="max-width: 1400px; height: 250px; margin: auto; margin-top: 40px; border: none">
+  <div class="row g-0">
+    <div class="col-md-4" style="width: 500px; height: 250px; background-size: cover;">
+      <a href="https://gig.saramin.co.kr/" target="_blank"><img
+              src="https://firebasestorage.googleapis.com/v0/b/sparta-510ee.appspot.com/o/image11.png?alt=media&token=a61397fa-26a0-4e9f-bdc0-2f973fc5dd44"
+              class="img-fluid rounded-start" alt="..."></a>
+    </div>
+    <div class="col-md-6">
+      <div class="card-body">
+        <h5 class="card-title fw-bold">사람인 gig</h5>
+        <p class="card-text" style="margin-top: 45px">프로젝트 의뢰와 찾기 등 양방향의 프리랜서 관련 활동이 가능합니다.<br>매거진 기능을 통해
+          프리랜서에게 유용한 정보들도 볼 수 있어요.</p>
+        <p class="card-text"><small class="text-body-secondary">IT 프리랜서 안심 매칭 플랫폼</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card mb-3"
+     style="max-width: 1400px; height: 250px; margin: auto; margin-top: 40px; border: none">
+  <div class="row g-0">
+    <div class="col-md-4" style="width: 500px; height: 250px; background-size: cover;">
+      <a href="https://www.wanted.co.kr/gigs" target="_blank"><img
+              src="https://firebasestorage.googleapis.com/v0/b/sparta-510ee.appspot.com/o/wantedgigs.png?alt=media&token=f9975ca5-5591-488a-b26f-819f71a833ae"
+              class="img-fluid rounded-start" alt="..."></a>
+    </div>
+    <div class="col-md-6">
+      <div class="card-body">
+        <h5 class="card-title fw-bold">원티드 gigs</h5>
+        <p class="card-text" style="margin-top: 45px">프로젝트를 등록하면 프리랜서들이 원하는 프로젝트에 참여를 신청할 수 있습니다.<br>우수 프리랜서
+          기능으로 열심히 활동을 하는 분은 우선적으로 필터링 될 수 있도록 합니다.</p>
+        <p class="card-text"><small class="text-body-secondary">최고의 IT 프리랜서 외주 플랫폼</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>
