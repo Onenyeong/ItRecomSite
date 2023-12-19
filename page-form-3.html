@@ -16,6 +16,7 @@
             background-color: grey;
         }
         .main {
+
             background-color: rgb(88, 88, 88);
             text-align: center;
             color: rgb(236, 236, 236);
@@ -44,6 +45,33 @@
             margin:  70px 0px 0px 50px;
         }
 
+        .card:hover {
+            background-color: rgb(61, 61, 61);
+            transform: scale(1.1);
+            transition: background-color 0.5s ease, transform 0.5s ease;
+        }
+
+        .card:not(:hover) {
+            transform: scale(1.0);
+            transition: background-color 0.5s ease, transform 0.5s ease;
+        }
+
+        .col-md-6 {
+            color: rgb(255, 255, 255);
+            text-shadow: 2px 2px 3px black;
+        }
+
+        .display-3 {
+            animation: blinkText 2s infinite alternate;
+        }
+        @keyframes blinkText {
+            0% {
+                color: white;
+            }
+            100% {
+                color: rgb(172, 121, 255);
+            }
+        }
 
     </style>
 </head>
@@ -59,9 +87,23 @@
                     </svg>
                 </a>
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                    <li><a href="#" class="nav-link px-2">Home</a></li>
-                    <li><a href="#" class="nav-link px-2 text-white">추천 강의</a></li>
-                    <li><a href="#" class="nav-link px-2 text-white">개발 블로그</a></li>
+                    <li><a  href="#" onclick="showPageForm(1)" class="nav-link px-2">Home</a></li>
+                    <li><a  href="#" onclick="showPageForm(2)"class="nav-link px-2 text-white">추천 강의</a></li>
+                    <li><a  href="#" onclick="showPageForm(3)" class="nav-link px-2 text-white">개발 블로그</a></li>
+
+                    <script>
+                        function showPageForm(pageNumber) {
+                            if (pageNumber === 1) {
+                                window.location.href = 'page-form-1.html';
+                            }
+                            if (pageNumber === 2) {
+                                window.location.href = 'page-form-2.html';
+                            }
+                            if (pageNumber === 3) {
+                                window.location.href = 'page-form-3.html';
+                            }
+                        }
+                    </script>
                 </ul>
                 <div class="text-end" bis_skin_checked="1">
                     <a class="btn btn-danger" href="https://spartacodingclub.kr/" target="_blank" role="button">스파르타
