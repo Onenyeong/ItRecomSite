@@ -77,6 +77,7 @@
             0% {
                 color: white;
             }
+
             100% {
                 color: rgb(172, 121, 255);
             }
@@ -94,6 +95,19 @@
                         <li><a href="#" class="nav-link px-2">Home</a></li>
                         <li><a href="#" class="nav-link px-2 text-white">추천 강의</a></li>
                         <li><a href="#" class="nav-link px-2 text-white">개발 블로그</a></li>
+                        <script>
+                            function showPageForm(pageNumber) {
+                                if (pageNumber === 1) {
+                                    window.location.href = 'page-form-1.html';
+                                }
+                                if (pageNumber === 2) {
+                                    window.location.href = 'page-form-2.html';
+                                }
+                                if (pageNumber === 3) {
+                                    window.location.href = 'page-form-3.html';
+                                }
+                            }
+                        </script>
                     </ul>
                     <div class="text-end" bis_skin_checked="1">
                         <a class="btn btn-danger" href="https://spartacodingclub.kr/" target="_blank" role="button">스파르타
