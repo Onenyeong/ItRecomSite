@@ -3,7 +3,7 @@ body {
 }
 .head {
   background-color: rgb(44, 44, 44);
-  padding: 12px; /* Add padding for better spacing */
+  padding: 10px; /* Add padding for better spacing */
 }
 
 .nav-link {
@@ -31,14 +31,13 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 .center > h2 {
   padding-right: 5%;
   display: flex;
   justify-content: center;
 }
-ul {
-  width: 1000px;
-}
+
 .center > ul > li {
   list-style-type: none;
   display: flex;
@@ -46,10 +45,13 @@ ul {
   justify-content: center;
   font-size: 20px;
   padding-left: 10%;
+  margin-top: 10%;
 }
 
 li button {
-  margin-top: 70%;
+  display: block;
+  position: relative;
+
   padding-bottom: 25px;
   width: 125px;
   border-radius: 10px;
@@ -59,16 +61,17 @@ li button {
   color: white;
   border: none;
   cursor: pointer;
-  transition: background-color 0.3s;
+
   box-shadow: 0 8px 16px 10px rgba(0, 0, 0, 0.2);
 }
 
 li button:hover {
   background-color: #e0e0e0;
+
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-ul {
+.drop {
   width: 100%;
   padding: 0; /* Remove default padding */
   display: flex; /* Make it a flex container */
@@ -128,6 +131,7 @@ button.jsp {
   padding: 12px 16px;
   text-decoration: none;
   color: #333;
+
   transition: background-color 0.3s, color 0.3s;
 }
 
